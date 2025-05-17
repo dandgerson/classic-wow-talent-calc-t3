@@ -4,14 +4,17 @@ import { auth } from "~/server/auth";
 export async function TopBar() {
   const session = await auth();
 
-  const renderNavLink = () => (
-    <a
-      href="#"
-      className="inline-flex items-center px-1 pt-1 font-medium hover:text-blue-600"
-    >
-      Product
-    </a>
-  );
+  /**
+   * TODO: make a actual navlinks
+   */
+  // const renderNavLink = () => (
+  //   <a
+  //     href="#"
+  //     className="inline-flex items-center px-1 pt-1 font-medium hover:text-blue-600"
+  //   >
+  //     Product
+  //   </a>
+  // );
 
   return (
     <nav className="fixed top-0 left-0 z-50 w-full text-xl text-white">
